@@ -11,12 +11,12 @@ export default function Gharib({navigation}) {
       </View>
 
       <ScrollView style={styles.container}>
-        <NavButton label={"Gharib Imalah"} />
-        <NavButton label={"Gharib Isymam"} />
-        <NavButton label={"Gharib Saktah"} />
-        <NavButton label={"Gharib Tashil"} />
-        <NavButton label={"Gharib Naqi"} />
-        <NavButton label={"Gharib Badal"} />
+        <NavButton screenGroup={"MateriGharib"} navigation={navigation} targetScreen={"Imalah"} label={"Gharib Imalah"} />
+        <NavButton screenGroup={"MateriGharib"} navigation={navigation} targetScreen={"Isymam"} label={"Gharib Isymam"} />
+        <NavButton screenGroup={'MateriGharib'} navigation={navigation} targetScreen={"Saktah"} label={"Gharib Saktah"} />
+        <NavButton screenGroup={'MateriGharib'} navigation={navigation} targetScreen={"Tashil"} label={"Gharib Tashil"} />
+        <NavButton screenGroup={"MateriGharib"} navigation={navigation} targetScreen={"Naqi"} label={"Gharib Naqi"} />
+        <NavButton screenGroup={"MateriGharib"} navigation={navigation} targetScreen={"Badal"} label={"Gharib Badal"} />
       </ScrollView>
     </View>
   )

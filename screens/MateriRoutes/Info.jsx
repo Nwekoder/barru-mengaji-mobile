@@ -1,6 +1,7 @@
 import { View, ScrollView, StyleSheet, Image, Text } from 'react-native'
 import React from 'react'
 import CustomHeader from '../../components/CustomHeader'
+import logo_bm from '../../assets/icon.png'
 
 export default function Info({navigation}) {
   return (
@@ -11,8 +12,10 @@ export default function Info({navigation}) {
 
       <ScrollView style={styles.container}>
         <View style={styles.logo_container}>
-          
+          <Image source={logo_bm} style={styles.logo} />
         </View>
+        <Text style={styles.subtitle}>Tentang</Text>
+        <Text style={styles.title}>Barru Mengaji</Text>
       </ScrollView>
     </View>
   )
@@ -43,5 +46,23 @@ const styles = StyleSheet.create({
   button_label: {
     color: 'white',
     fontSize: 18
+  },
+  logo_container: {
+    width: '100%',
+    alignItems: 'center'
+  },
+  logo: {
+    width: 150,
+    height: 150,   
+  },
+  subtitle: {
+    textAlign: 'center',
+    marginTop: 20
+  },
+  title: {
+    textAlign: 'center',
+    fontSize: 24,
+    fontWeight: 'bold',
+    color: '#499E2B'
   }
 })

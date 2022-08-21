@@ -12,6 +12,9 @@ import Loading from './components/Loading';
 import MainRoutes from './screens/MainRoutes/Index'
 import MateriRoutes from './screens/MateriRoutes/Index'
 
+import MateriGharib from './screens/MateriRoutes/MateriGharib/Index'
+import MateriHukumNunTanwin from './screens/MateriRoutes/MateriHukumNunTanwin/Index'
+
 export default function App() {
   const [loading, setLoading] = useState(true);
   const [authenticated, setAuthenticated] = useState(false);
@@ -36,6 +39,8 @@ export default function App() {
             <>
               <Screen name='MainRoutes' option={{headerShown: false}} component={MainRoutes} />
               <Screen name='MateriRoutes' option={{headerShown: false}} component={MateriRoutes} />
+              <Screen name='MateriGharib' option={{headerShown: false}} component={MateriGharib} />
+              <Screen name='MateriHukumNunTanwin' option={{headerShown: false}} component={MateriHukumNunTanwin} />
             </>
           ) : (
             <Screen name='Login' options={{headerShown: false}} component={Login} />
